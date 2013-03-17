@@ -15,10 +15,10 @@ if development? # This is set by default, override with `RACK_ENV=production rac
 end
 
 configure :development, :production do
-  set :datamapper_url, "sqlite3://event.sqlite3"
+  set :datamapper_url, "sqlite3://#{File.dirname(__FILE__)}/event.sqlite3"
 end
 configure :test do
-  set :datamapper_url, "sqlite3://event-test.sqlite3"
+  set :datamapper_url, "sqlite3://#{File.dirname(__FILE__)}/event-test.sqlite3"
 end
 
 before do
