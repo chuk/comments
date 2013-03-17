@@ -10,6 +10,13 @@ gem 'dm-validations'
 gem 'dm-timestamps'
 gem 'dm-migrations'
 
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
+end
+
 group :development, :test do
   gem 'debugger'
   gem 'timecop'
