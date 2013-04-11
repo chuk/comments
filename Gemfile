@@ -10,12 +10,11 @@ gem 'dm-validations'
 gem 'dm-timestamps'
 gem 'dm-migrations'
 
-group :production do
-  gem 'pg'
-end
-group :development, :test do
-  gem 'sqlite3'
-end
+#gem 'active_support'
+
+gem 'thin'
+gem 'mongoid', '~> 3.0.0'
+gem 'rake'
 
 group :development, :test do
   gem 'debugger'

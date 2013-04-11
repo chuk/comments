@@ -50,6 +50,10 @@ class ApplicationTest < MiniTest::Unit::TestCase
   end
   
   
+  def test_get_event_list
+    get '/events'
+    assert_equal 200, last_response.status
+  end
   
   def test_add_and_retrieve_event
 
