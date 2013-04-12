@@ -13,7 +13,7 @@ require 'rack/test'
 require 'base64'
 require 'json'
 require 'timecop'
-require './event'
+require './app/event'
 
 class ApplicationTest < MiniTest::Unit::TestCase
   include Rack::Test::Methods
