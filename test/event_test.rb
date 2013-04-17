@@ -73,7 +73,7 @@ class ApplicationTest < MiniTest::Unit::TestCase
 
   def test_add_and_remove_event
     event = {
-        "name" => "event 1"
+        "name" => "event 1-"
     }
 
     event_id = make_an_event(event)
